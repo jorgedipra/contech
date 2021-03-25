@@ -5,3 +5,9 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "login";
+#logo {
+    width: 35px;
+    margin-top: -10px;
+    position: absolute;
+    margin-left: -40px;
+}
