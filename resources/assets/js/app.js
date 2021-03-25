@@ -12,8 +12,9 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 
 
-Vue.component('example', require('./components/Example.vue'));
-Vue.component('home', require('./components/HomeComponent.vue'));
+
+Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('home-component', require('./components/HomeComponent.vue'));
 
 const app = new Vue({
     el: '#app'

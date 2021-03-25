@@ -16,12 +16,8 @@
 
 <script>
     export default {
-        name :"home-component",
-        props : ['lessons_to_props'],
-        data (){
-          return {
-            lessons : this.lessons_to_props
-          }
+        mounted() {
+            console.log('Component mounted.')
         }
     }
 </script>
