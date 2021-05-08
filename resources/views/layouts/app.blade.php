@@ -71,8 +71,11 @@
                 </div>
             </div>
         </nav>
-
+        @if (!Auth::guest())
+    XXX-X
+        @endif
         @yield('content')
+        
     </div>
 
     <!-- Scripts -->

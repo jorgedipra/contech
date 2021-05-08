@@ -13,7 +13,7 @@ Vue.config.productionTip = false
 
 
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('logo-component', require('./components/LogoComponent.vue').default);
 Vue.component('home-component', require('./components/HomeComponent.vue'));
 
 const app = new Vue({
