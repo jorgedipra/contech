@@ -21,8 +21,14 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('home');
+        
+            $perfil = $request->get('perfil');
+            if($perfil==NULL)$perfil=0;
+
+        
+        return view('home')
+                    ->with('perfil', $perfil);
     }
 }

@@ -1,5 +1,11 @@
 <template>
 <article id="menu">
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/home">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ nameperfil }}</li>
+    </ol>
+    </nav>
     <div id="sub_menu1" class="col-sm-3">
         <div class="sidebar-nav">
             <div class="navbar navbar-default" role="navigation">
@@ -50,8 +56,43 @@
 
 <script>
     export default {
+        props: {
+            data: {},
+        },
+        data() {
+            return {
+                perfil: '',
+                nameperfil: ''
+            }
+        },
         mounted() {
-            console.log('Component mounted.')
+            this.perfil = this.data;
+            // console.log(this.perfil);
+            $("#sub_menu1").hide();
+            $("#sub_menu2").hide();
+
+            switch (this.perfil) {
+                case "1":
+                    $("#menu").show();
+                    $("#sub_menu1").show();
+                    this.nameperfil="Coordinación";
+                    break;
+                case "2":
+                    $("#menu").show();
+                    $("#sub_menu2").show();
+                    this.nameperfil="Personal";
+                    break;
+            
+                default:
+                    $("#sub_menu1").hide();
+                    $("#sub_menu2").hide();
+                    break;
+            }
+        },
+        methods:{
+        },
+        computed:{
+            
         }
-    }
+}
 </script>

@@ -30,7 +30,7 @@
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
                         <img src="./img/escudomini.png" id="logo" class="img-responsive center-block" alt="Imagen" title="Contech" />
-                       {{ config('app.name', 'Contech') }} 
+                            {{ config('app.name', 'Contech') }} 
                     </a>
                 </div>
 
@@ -49,14 +49,14 @@
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                   <i class="fa fa-user" aria-hidden="true"></i>  &nbsp&nbsp{{ Auth::user()->name }} <span class="caret"></span>
+                                    <i class="fa fa-user" aria-hidden="true"></i>  &nbsp&nbsp{{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                                document.getElementById('logout-form').submit();">
                                             <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
                                         </a>
 
@@ -72,7 +72,7 @@
             </div>
         </nav>
         @if (!Auth::guest())
-            <menu-component></menu-component>
+            <menu-component :data="{{ json_encode($perfil) }}"></menu-component>
         @endif
         @yield('content')
         

@@ -15311,10 +15311,49 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    data: {}
+  },
+  data: function data() {
+    return {
+      perfil: '',
+      nameperfil: ''
+    };
+  },
   mounted: function mounted() {
-    console.log('Component mounted.');
-  }
+    this.perfil = this.data; // console.log(this.perfil);
+
+    $("#sub_menu1").hide();
+    $("#sub_menu2").hide();
+
+    switch (this.perfil) {
+      case "1":
+        $("#menu").show();
+        $("#sub_menu1").show();
+        this.nameperfil = "Coordinación";
+        break;
+
+      case "2":
+        $("#menu").show();
+        $("#sub_menu2").show();
+        this.nameperfil = "Personal";
+        break;
+
+      default:
+        $("#sub_menu1").hide();
+        $("#sub_menu2").hide();
+        break;
+    }
+  },
+  methods: {},
+  computed: {}
 });
 
 /***/ }),
@@ -46600,158 +46639,185 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("article", { attrs: { id: "menu" } }, [
+    _c("nav", { attrs: { "aria-label": "breadcrumb" } }, [
+      _c("ol", { staticClass: "breadcrumb" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "li",
+          {
+            staticClass: "breadcrumb-item active",
+            attrs: { "aria-current": "page" }
+          },
+          [_vm._v(_vm._s(_vm.nameperfil))]
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _vm._m(2)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("article", { attrs: { id: "menu" } }, [
-      _c("div", { staticClass: "col-sm-3", attrs: { id: "sub_menu1" } }, [
-        _c("div", { staticClass: "sidebar-nav" }, [
-          _c(
-            "div",
-            {
-              staticClass: "navbar navbar-default",
-              attrs: { role: "navigation" }
-            },
-            [
-              _c("div", { staticClass: "navbar-header" }, [
-                _c(
-                  "button",
-                  {
-                    staticClass: "navbar-toggle",
-                    attrs: {
-                      type: "button",
-                      "data-toggle": "collapse",
-                      "data-target": ".sidebar-navbar-collapse"
-                    }
-                  },
-                  [
-                    _c("span", { staticClass: "sr-only" }, [
-                      _vm._v("Toggle navigation")
-                    ]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "icon-bar" }),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "icon-bar" }),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "icon-bar" })
-                  ]
-                ),
-                _vm._v(" "),
-                _c("span", { staticClass: "visible-xs navbar-brand" }, [
-                  _vm._v("Sidebar Menú")
-                ])
-              ]),
-              _vm._v(" "),
+    return _c("li", { staticClass: "breadcrumb-item" }, [
+      _c("a", { attrs: { href: "/home" } }, [_vm._v("Home")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-sm-3", attrs: { id: "sub_menu1" } }, [
+      _c("div", { staticClass: "sidebar-nav" }, [
+        _c(
+          "div",
+          {
+            staticClass: "navbar navbar-default",
+            attrs: { role: "navigation" }
+          },
+          [
+            _c("div", { staticClass: "navbar-header" }, [
               _c(
-                "div",
+                "button",
                 {
-                  staticClass:
-                    "navbar-collapse collapse sidebar-navbar-collapse"
+                  staticClass: "navbar-toggle",
+                  attrs: {
+                    type: "button",
+                    "data-toggle": "collapse",
+                    "data-target": ".sidebar-navbar-collapse"
+                  }
                 },
                 [
-                  _c("ul", { staticClass: "nav navbar-nav" }, [
-                    _c("li", { staticClass: "active" }, [
-                      _c("a", { attrs: { href: "#" } }, [
-                        _vm._v("Administrar Reporte")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [_vm._v("Monitoreo")])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [_vm._v("Alertas")])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [
-                        _vm._v("Notificaciones "),
-                        _c("span", { staticClass: "badge" }, [_vm._v("1,118")])
-                      ])
+                  _c("span", { staticClass: "sr-only" }, [
+                    _vm._v("Toggle navigation")
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "icon-bar" }),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "icon-bar" }),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "icon-bar" })
+                ]
+              ),
+              _vm._v(" "),
+              _c("span", { staticClass: "visible-xs navbar-brand" }, [
+                _vm._v("Sidebar Menú")
+              ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "navbar-collapse collapse sidebar-navbar-collapse"
+              },
+              [
+                _c("ul", { staticClass: "nav navbar-nav" }, [
+                  _c("li", { staticClass: "active" }, [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v("Administrar Reporte")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [_vm._v("Monitoreo")])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [_vm._v("Alertas")])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v("Notificaciones "),
+                      _c("span", { staticClass: "badge" }, [_vm._v("1,118")])
                     ])
                   ])
-                ]
-              )
-            ]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-sm-3", attrs: { id: "sub_menu2" } }, [
-        _c("div", { staticClass: "sidebar-nav" }, [
-          _c(
-            "div",
-            {
-              staticClass: "navbar navbar-default",
-              attrs: { role: "navigation" }
-            },
-            [
-              _c("div", { staticClass: "navbar-header" }, [
-                _c(
-                  "button",
-                  {
-                    staticClass: "navbar-toggle",
-                    attrs: {
-                      type: "button",
-                      "data-toggle": "collapse",
-                      "data-target": ".sidebar-navbar-collapse"
-                    }
-                  },
-                  [
-                    _c("span", { staticClass: "sr-only" }, [
-                      _vm._v("Toggle navigation")
-                    ]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "icon-bar" }),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "icon-bar" }),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "icon-bar" })
-                  ]
-                ),
-                _vm._v(" "),
-                _c("span", { staticClass: "visible-xs navbar-brand" }, [
-                  _vm._v("Sidebar Menú")
                 ])
-              ]),
-              _vm._v(" "),
+              ]
+            )
+          ]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-sm-3", attrs: { id: "sub_menu2" } }, [
+      _c("div", { staticClass: "sidebar-nav" }, [
+        _c(
+          "div",
+          {
+            staticClass: "navbar navbar-default",
+            attrs: { role: "navigation" }
+          },
+          [
+            _c("div", { staticClass: "navbar-header" }, [
               _c(
-                "div",
+                "button",
                 {
-                  staticClass:
-                    "navbar-collapse collapse sidebar-navbar-collapse"
+                  staticClass: "navbar-toggle",
+                  attrs: {
+                    type: "button",
+                    "data-toggle": "collapse",
+                    "data-target": ".sidebar-navbar-collapse"
+                  }
                 },
                 [
-                  _c("ul", { staticClass: "nav navbar-nav" }, [
-                    _c("li", { staticClass: "active" }, [
-                      _c("a", { attrs: { href: "#" } }, [
-                        _vm._v("Creación de Usuarios")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [
-                        _vm._v("Modificación de Usuarios")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [
-                        _vm._v("Deshabilitación de Usuarios "),
-                        _c("span", { staticClass: "badge" }, [_vm._v("1,118")])
-                      ])
+                  _c("span", { staticClass: "sr-only" }, [
+                    _vm._v("Toggle navigation")
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "icon-bar" }),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "icon-bar" }),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "icon-bar" })
+                ]
+              ),
+              _vm._v(" "),
+              _c("span", { staticClass: "visible-xs navbar-brand" }, [
+                _vm._v("Sidebar Menú")
+              ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "navbar-collapse collapse sidebar-navbar-collapse"
+              },
+              [
+                _c("ul", { staticClass: "nav navbar-nav" }, [
+                  _c("li", { staticClass: "active" }, [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v("Creación de Usuarios")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v("Modificación de Usuarios")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v("Deshabilitación de Usuarios "),
+                      _c("span", { staticClass: "badge" }, [_vm._v("1,118")])
                     ])
                   ])
-                ]
-              )
-            ]
-          )
-        ])
+                ])
+              ]
+            )
+          ]
+        )
       ])
     ])
   }
