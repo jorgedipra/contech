@@ -12,3 +12,35 @@
     position: absolute;
     margin-left: -40px;
 }
+
+#menu {
+    display: none;
+}
+
+a.tarjeta:hover {
+    background: #895dc094;
+    border-radius: 5%;
+    padding: 10px;
+}
+
+
+/* make sidebar nav vertical */
+
+@media (min-width: 768px) {
+    .sidebar-nav .navbar .navbar-collapse {
+        padding: 0;
+        max-height: none;
+    }
+    .sidebar-nav .navbar ul {
+        float: none;
+        display: block;
+    }
+    .sidebar-nav .navbar li {
+        float: none;
+        display: block;
+    }
+    .sidebar-nav .navbar li a {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}

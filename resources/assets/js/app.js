@@ -14,6 +14,7 @@ Vue.config.productionTip = false
 
 
 Vue.component('logo-component', require('./components/LogoComponent.vue').default);
+Vue.component('menu-component', require('./components/MenuComponent.vue').default);
 Vue.component('home-component', require('./components/HomeComponent.vue'));
 
 const app = new Vue({

@@ -72,7 +72,7 @@
             </div>
         </nav>
         @if (!Auth::guest())
-    XXX-X
+            <menu-component></menu-component>
         @endif
         @yield('content')
         
