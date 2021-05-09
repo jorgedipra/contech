@@ -8,7 +8,7 @@
 
                 <div class="icon_box">
 
-                <img src="http://127.0.0.1:8000/img/escudo.png" width="400">
+                <img src="./img/escudo.png" width="400">
                 </div>
 
             </div>
