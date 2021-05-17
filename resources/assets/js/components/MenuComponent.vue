@@ -43,9 +43,9 @@
                     </div>
                     <div class="navbar-collapse collapse sidebar-navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li  id="type_Cr" class="active"><a href="?perfil=2&opp=1">Creación de Usuarios</a></li>
-                        <li  id="type_Mu" class="dt_menu" ><a href="?perfil=2&opp=2">Modificación de Usuarios</a></li>
-                        <li  id="type_Du" class="dt_menu" ><a href="?perfil=2&opp=3">Deshabilitación de Usuarios <span class="badge">1,118</span></a></li>
+                        <li  id="type_Cr"  class="dt_menu" ><a href="?perfil=2&opp=5">Creación de Usuarios <i class="dt_icono fa fa-user" aria-hidden="true"></i></a></li>
+                        <li  id="type_Mu" class="dt_menu" ><a href="?perfil=2&opp=6">Modificación de Usuarios <i class="dt_icono fa fa-users" aria-hidden="true"></i></a></li>
+                        <li  id="type_Du" class="dt_menu" ><a href="?perfil=2&opp=7">Deshabilitación de Usuarios <i class="dt_icono fa fa-frown-o" aria-hidden="true"></i></a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -111,9 +111,31 @@ i.dt_icono {
                         $("#type_Al").addClass("active");
                         $(".fa-exclamation-triangle").show();
                     break;
-                default:
+                case "4":
                         $("#type_Nt").addClass("active");
                         $(".fa-bell").show();
+                    break;
+                case "5":
+                        $("#type_Cr").addClass("active");
+                        $(".fa-user").show();
+                    break;
+                case "6":
+                        $("#type_Mu").addClass("active");
+                        $(".fa-users").show();
+                    break;
+                case "7":
+                        $("#type_Du").addClass("active");
+                        $(".fa-frown-o").show();
+                    break;
+                default:
+                        $("#sub_menu1").css({
+                            'margin': '0 auto',
+                            'float': 'inherit'
+                        });
+                        $("#sub_menu2").css({
+                            'margin': '0 auto',
+                            'float': 'inherit'
+                        });
                     break;
             }
         },

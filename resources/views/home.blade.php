@@ -157,7 +157,7 @@
                 &nbsp;&nbsp;&nbsp;
                 <a href="#" class="btn btn-success btn-lg">Aceptar</a>
             </div>
-        @else
+        @elseif ($opp == 4)
             <h2 class="card-header text-center">
                 <div class="btn-group " role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-light btn-lg"> &nbsp;&nbsp; Crear &nbsp;&nbsp; </button>
@@ -189,6 +189,8 @@
                 &nbsp;&nbsp;&nbsp;
                 <a href="#" class="btn btn-success btn-lg">Aceptar</a>
             </div>
+        @else
+            
         @endif
         </div>
     </div>
@@ -212,6 +214,18 @@
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
         @elseif ($opp == 2)
+            <h2 class="card-header text-center">
+                Memoria de Datos
+            </h2>
+            <div class="card-body text-center">
+                <h5 class="card-title">Special title treatment</h5>
+                    This is some text within a card body.
+                    
+            </div>
+            <div class="card-footer text-muted text-center">
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        @elseif ($opp == 3)
             <h2 class="card-header text-center">
                 Memoria de Datos
             </h2>
