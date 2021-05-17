@@ -201,9 +201,9 @@
 <div class="container">
     <div class="row">
         <div class="col-md-7 col-md-offset-1">
-        @if ($opp == 1)
+        @if ($opp == 5)
             <h2 class="card-header text-center">
-                    Featured
+                    Creación de Usuarios
                     </h2>
                     <div class="card-body text-center">
                         <h5 class="card-title">Special title treatment</h5>
@@ -211,32 +211,38 @@
                     
                     </div>
                     <div class="card-footer text-muted text-center">
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary btn-lg">Cancelar</a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="#" class="btn btn-success btn-lg">Guardar</a>
                     </div>
-        @elseif ($opp == 2)
+        @elseif ($opp == 6)
             <h2 class="card-header text-center">
-                Memoria de Datos
+                Modificación de Usuarios
             </h2>
             <div class="card-body text-center">
                 <h5 class="card-title">Special title treatment</h5>
                     This is some text within a card body.
                     
             </div>
-            <div class="card-footer text-muted text-center">
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        @elseif ($opp == 3)
+                    <div class="card-footer text-muted text-center">
+                        <a href="#" class="btn btn-primary btn-lg">Cancelar</a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="#" class="btn btn-success btn-lg">Guardar</a>
+                    </div>
+        @elseif ($opp == 7)
             <h2 class="card-header text-center">
-                Memoria de Datos
+                Deshabilitación de Usuarioss
             </h2>
             <div class="card-body text-center">
                 <h5 class="card-title">Special title treatment</h5>
                     This is some text within a card body.
                     
             </div>
-            <div class="card-footer text-muted text-center">
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+                    <div class="card-footer text-muted text-center">
+                        <a href="#" class="btn btn-primary btn-lg">Cancelar</a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="#" class="btn btn-success btn-lg">Guardar</a>
+                    </div>
         @else
 
         @endif
