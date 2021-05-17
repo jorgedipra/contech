@@ -101,15 +101,26 @@
             </div>
         @elseif ($opp == 2)
             <h2 class="card-header text-center">
-                Memoria de Datos
+                Reporte Actual
             </h2>
-            <div class="card-body text-center">
-                <h5 class="card-title">Special title treatment</h5>
-                    This is some text within a card body.
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Codigo:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="|">
+                    </div>
+                    <br><br>
+                    <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+                    <br><br>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5">|</textarea>
+                </div><br><br>
+                
                     
             </div>
             <div class="card-footer text-muted text-center">
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-primary btn-lg">Corregido</a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="#" class="btn btn-success btn-lg">Escalar</a>
             </div>
         @elseif ($opp == 3)
             <h2 class="card-header text-center">
