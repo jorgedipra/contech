@@ -76,8 +76,10 @@
                 </div>
             </div>
         </nav>
+        
         @if (!Auth::guest() && isset($perfil))
-            <menu-component :data="{{ json_encode($perfil) }}"></menu-component>
+            <menu-component :data="{{ json_encode($perfil) }}"
+                            :opp="{{ json_encode($opp) }} "></menu-component>
         @endif
         @yield('content')
         
