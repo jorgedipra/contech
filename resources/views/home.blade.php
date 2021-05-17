@@ -124,18 +124,71 @@
             </div>
         @elseif ($opp == 3)
             <h2 class="card-header text-center">
-                Memoria de Datos
+                <div class="btn-group " role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-light btn-lg"> &nbsp;&nbsp; Crear &nbsp;&nbsp; </button>
+                    <button type="button" class="btn btn-light btn-lg"> &nbsp;&nbsp; Consultar &nbsp;&nbsp; </button>
+                    <button type="button" class="btn btn-light btn-lg"> &nbsp;&nbsp; Eliminar &nbsp;&nbsp; </button>
+                    <button type="button" class="btn btn-light btn-lg"> &nbsp;&nbsp; Enviar &nbsp;&nbsp; </button>
+                </div>
             </h2>
             <div class="card-body text-center">
-                <h5 class="card-title">Special title treatment</h5>
-                    This is some text within a card body.
-                    
+                     <select class="form-select form-select-lg mb-3 btn-lg" aria-label="Disabled select example">
+                    <option selected>Elija Tipo de mensaje</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    </select>
+                     &nbsp;&nbsp;&nbsp;
+                    <select class="form-select form-select-lg mb-3 btn-lg" aria-label="Disabled select example">
+                    <option selected>Destinatario</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    </select>   
+                    <br><br>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="8">|</textarea>
+                    <button type="button" class="btn btn-light" style="margin-left: 25%; margin-top: -100px;position: absolute;z-index: 99;font-size: 20px;">
+                    +&nbsp;&nbsp;Añadir <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;o Crear
+                    </button> <br><br>     
             </div>
-            <div class="card-footer text-muted text-center">
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+             <div class="card-footer text-muted text-center">
+                <a href="#" class="btn btn-primary btn-lg">Cancelar</a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="#" class="btn btn-success btn-lg">Aceptar</a>
             </div>
         @else
-
+            <h2 class="card-header text-center">
+                <div class="btn-group " role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-light btn-lg"> &nbsp;&nbsp; Crear &nbsp;&nbsp; </button>
+                    <button type="button" class="btn btn-light btn-lg"> &nbsp;&nbsp; Consultar &nbsp;&nbsp; </button>
+                    <button type="button" class="btn btn-light btn-lg"> &nbsp;&nbsp; Eliminar &nbsp;&nbsp; </button>
+                    <button type="button" class="btn btn-light btn-lg"> &nbsp;&nbsp; Enviar &nbsp;&nbsp; </button>
+                </div><br>
+            </h2>
+            <div class="card-body text-center">
+                     <select class="form-select form-select-lg mb-3 btn-lg" aria-label="Disabled select example">
+                    <option selected>Elija Tipo de mensaje</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    </select>
+                     &nbsp;&nbsp;&nbsp;
+                    <select class="form-select form-select-lg mb-3 btn-lg" aria-label="Disabled select example">
+                    <option selected>Destinatario</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    </select>   
+                    <br><br>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="8">|</textarea>
+                     <br><br>     
+            </div>
+             <div class="card-footer text-muted text-center">
+                <a href="#" class="btn btn-primary btn-lg">Cancelar</a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="#" class="btn btn-success btn-lg">Aceptar</a>
+            </div>
         @endif
         </div>
     </div>
