@@ -54,6 +54,11 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
+                                    @if(Request::route()->getName()!='home')
+                                        <a href="{{ route('home') }}">
+                                            <i class="fa fa-home" aria-hidden="true"></i> Home
+                                        </a>
+                                    @endif
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                 document.getElementById('logout-form').submit();">
@@ -71,7 +76,7 @@
                 </div>
             </div>
         </nav>
-        @if (!Auth::guest())
+        @if (!Auth::guest() && isset($perfil))
             <menu-component :data="{{ json_encode($perfil) }}"></menu-component>
         @endif
         @yield('content')
