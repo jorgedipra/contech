@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<div id="loading">
+    <div class="lds-ripple"><div></div><div></div></div>
+</div>
 @if($perfil==0)
 <div class="container">
     <div class="row">
@@ -30,6 +33,58 @@
         </a>
     </div>
 </div>
+@elseif ($perfil==1)
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-7 col-md-offset-1">
+        @if ($opp == 1)
+            <div class="card-header text-center">
+                    Featured
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Special title treatment</h5>
+                        This is some text within a card body.
+                    
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+        @elseif ($opp == 2)
+            `Password` input is empty!
+        @else
+
+        @endif
+        </div>
+    </div>
+</div>
+
+@else
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-7 col-md-offset-1">
+        @if ($opp == 1)
+            <div class="card-header text-center">
+                    Featured
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Special title treatment</h5>
+                        This is some text within a card body.
+                    
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+        @elseif ($opp == 2)
+            `Password` input is empty!
+        @else
+
+        @endif
+        </div>
+    </div>
+</div>
 @endif
+
 
 @endsection

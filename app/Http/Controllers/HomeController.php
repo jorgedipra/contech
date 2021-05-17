@@ -25,10 +25,12 @@ class HomeController extends Controller
     {
         
             $perfil = $request->get('perfil');
-            if($perfil==NULL)$perfil=0;
-
+            $opp = $request->get('opp');
+            if($perfil==NULL || $perfil=='')$perfil=0;
+            if($opp==NULL || $opp=='')$opp=0;
         
         return view('home')
-                    ->with('perfil', $perfil);
+                    ->with( 'perfil', $perfil)
+                    ->with('opp', $opp);
     }
 }
