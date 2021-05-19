@@ -206,8 +206,39 @@
                     Creación de Usuarios
                     </h2>
                     <div class="card-body text-center">
-                        <h5 class="card-title">Special title treatment</h5>
-                        This is some text within a card body.
+                        <h5 class="card-title"></h5>
+                        <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Nombre:</th>
+                                <td><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="|"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Apellidos:</th>
+                                <td><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="|"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tipo de Identificación:</th>
+                                <td><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="|"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">N° de Identificaión:</th>
+                                <td><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="|"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Cod. Empleado:</th>
+                                <td><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="|"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Correo:</th>
+                                <td><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="|"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">N° de Contacto:</th>
+                                <td><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="|"></td>
+                            </tr>
+                        </tbody>
+                    </table>
                     
                     </div>
                     <div class="card-footer text-muted text-center">
@@ -220,8 +251,39 @@
                 Modificación de Usuarios
             </h2>
             <div class="card-body text-center">
-                <h5 class="card-title">Special title treatment</h5>
-                    This is some text within a card body.
+                        <h5 class="card-title"></h5>
+                        <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Nombre:</th>
+                                <td><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="|"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Apellidos:</th>
+                                <td><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="|"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tipo de Identificación:</th>
+                                <td><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="|"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">N° de Identificaión:</th>
+                                <td><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="|"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Cod. Empleado:</th>
+                                <td><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="|"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Correo:</th>
+                                <td><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="|"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">N° de Contacto:</th>
+                                <td><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="|"></td>
+                            </tr>
+                        </tbody>
+                    </table>
                     
             </div>
                     <div class="card-footer text-muted text-center">
@@ -231,11 +293,58 @@
                     </div>
         @elseif ($opp == 7)
             <h2 class="card-header text-center">
-                Deshabilitación de Usuarioss
+                Deshabilitación de Usuarios
             </h2>
             <div class="card-body text-center">
-                <h5 class="card-title">Special title treatment</h5>
-                    This is some text within a card body.
+                <h5 class="card-title"></h5>
+                   <table class="table table-bordered ">
+                        <thead>
+                            <tr>
+                            <th scope="col" class="text-center">#</th>
+                            <th scope="col" class="text-center">Nombres</th>
+                            <th scope="col" class="text-center">Apellidos</th>
+                            <th scope="col" class="text-center">Perfil</th>
+                            <th scope="col" class="text-center">Habilitar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Jaime</td>
+                                <td>Perez</td>
+                                <td>Administrador</td>
+                                <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Daniel</td>
+                                <td>zuares</td>
+                                <td>Operador</td>
+                                <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Mamuricio</td>
+                                <td>Zapata</td>
+                                <td>Gerente</td>
+                                <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>  
                     
             </div>
                     <div class="card-footer text-muted text-center">
